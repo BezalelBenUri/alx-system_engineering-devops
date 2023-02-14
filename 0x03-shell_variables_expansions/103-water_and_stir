@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo $WATER$STIR | tr '[:lower:]' '[:upper:]')
+echo "obase=5; ibase=5; $(tr 'WATER' '01234' <<< "$WATER") + $(tr 'STIR' '01234' <<< "$STIR")" | bc | tr '01234' 'OHNSR'
