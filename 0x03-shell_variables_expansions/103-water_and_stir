@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=5; ibase=5; $(tr 'WATER' '01234' <<< "$WATER") + $(tr 'STIR' '01234' <<< "$STIR")" | bc | tr '01234' 'OHNSR'
+echo "ibase=5;obase=5;$(tr 'WATER' '01234' <<< "$WATER") + $(tr 'STIR' '01234' <<< "$STIR")" | dc | tr '01234' 'OHNSR'
