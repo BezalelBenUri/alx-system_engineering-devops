@@ -1,2 +1,2 @@
 #!/bin/bash
-BESTCHOL=$((WATER + STIR))
+echo $(echo $WATER$STIR | tr '[:lower:]' '[:upper:]')
