@@ -5,7 +5,7 @@
 #!/usr/bin/env bash
 # displays Best School 10 times.
 
-for (( aac=1; aac<10; aac++ ))
+for (( a=1; a<10; a++ ))
 do
     echo "Best School"
 done
