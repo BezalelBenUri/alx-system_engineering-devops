@@ -2,6 +2,10 @@
 
 # This script displays "Best School" 10 times using a for loop.
 
-for ((i = 0; i < 10; i++)); do
-  echo "Best School"
+#!/usr/bin/env bash
+# displays Best School 10 times.
+
+for (( aac=1; aac<=10; aac++ ))
+do
+    echo "Best School"
 done
