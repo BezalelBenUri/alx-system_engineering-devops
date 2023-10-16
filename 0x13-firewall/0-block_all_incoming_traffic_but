@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+#configure the uncomplicated firewall
+#blocks all incoming traffics excepts..
+
 sudo apt-get update
 sudo apt-get install ufw
 sudo ufw allow 22/tcp
