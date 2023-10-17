@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 #Script that accepts one argument whoami
-sudo -u "$" whomai
+if [ "$#" -ne 0 ]
+then
+        chsh -s /bin/bash "$1" &>/dev/null
+fi
+su - "$1" -c 'whoami'
