@@ -13,6 +13,6 @@ if __name__ == "__main__":
                 "task": tos.get("title"),
                 "completed": tos.get("completed"),
                 "username": uuss.get("username")
-            } for tos in requests.get(url + "todos",
-                                    params={"userId": uuss.get("id")}).json()]
+            } for tos in requests.get(url + "todos", params={
+                "userId": uuss.get("id")}).json()]
             for uuss in users}, jsonfile)
